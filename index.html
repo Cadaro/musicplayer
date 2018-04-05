@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="public/styles/style.css">
+  <title></title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xs-6 col-md-4">
+        <div class="player-window">
+          <h5 class="text-center">Play own music anywhere</h5>
+          <div class="music-viewer text-center">
+            <img id="music-thumb" class="rounded animated">
+            <div id="music-title" class="text-center">
+              <span class="music-title-name"></span>
+              <span class="music-title-band"></span>
+            </div>
+          </div>
+          <div class="player">
+            <audio controls>
+              <source src="public/audio/audio_1.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls text-center">
+              <i id="shuffle-icon" class="material-icons half-opacity" aria-label="repeat">shuffle</i>
+              <i id="skip-previous-icon" class="material-icons" aria-label="skip previous">skip_previous</i>
+              <i id="play-pause-icon" class="material-icons" data-icon="P" aria-label="play pause toggle">play_circle_filled</i>
+              <i id="skip-next-icon" class="material-icons" aria-label="skip next">skip_next</i>
+              <i id="repeat-icon" class="material-icons half-opacity" aria-label="repeat">repeat</i>
+              <i id="volume-icon" class="material-icons">volume_up</i>
+              <input id="volume" class="display-none" type="range" name="" value="1" min="0" max="1" step="0.01">
+              <div class="timer">
+                <span aria-label="timer">00:00</span>
+              </div>
+              <div>
+                <input id="timer-bar" type="range" name="" value="0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="public/scripts/data.js" charset="utf-8"></script>
+  <script src="public/scripts/player.js" charset="utf-8"></script>
+</body>
+</html>

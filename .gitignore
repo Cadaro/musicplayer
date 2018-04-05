@@ -1,0 +1,5 @@
+.tern-project
+
+public/.sass-cache
+public/styles/*.map
+public/styles/*.scss
